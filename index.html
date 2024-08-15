@@ -4,25 +4,27 @@
 <head>
     <meta charset="utf-8">
     <title>Form Ejercicio 1</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
     <div class="container">
         <h1>Formulario de datos personales</h1>
 
-        <div class="Form">
+        <div class="form">
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id=""><br>
+            <input type="text" name="nombre" required><br>
             <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido"><br>
+            <input type="text" name="apellido" required><br>
             <label for="mail">Mail:</label>
-            <input type="email" name="mail"><br>
+            <input type="email" name="mail" required><br>
             <label for="fechaNac">Fecha de Nacimiento:</label>
-            <input type="date" name="fechaNac"><br>
+            <input type="date" name="fechaNac" required><br>
             <label for="pais">País de residencia:</label>
-            <input type="text" name="pais"><br>
+            <input type="text" name="pais" required><br>
 
-            <button class="btn enviar" type="button">Enviar</button>
+            <button class="btn-enviar" type="button">Enviar</button>
 
 
         </div>
