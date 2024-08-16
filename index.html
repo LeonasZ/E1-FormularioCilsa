@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Form Ejercicio 1</title>
-    <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" id="themeStylesheet" href="estilos.css">
 
 </head>
 
@@ -24,14 +24,24 @@
             <label for="pais">País de residencia:</label>
             <input type="text" name="pais" required><br>
 
-            <button class="btn-enviar" type="button">Enviar</button>
+            <button class="btn-enviar" type="submit">Enviar</button>
 
 
         </div>
-        <button class="btn" type="button">Estilo 1</button>
-        <button class="btn" type="button">Estilo Alternativo</button>
+        <button class="btn" id="lightmode" type="button">Estilo 1</button>
+        <button class="btn" id="darkmode" type="button">Estilo Alternativo</button>
 
     </div>
 </body>
+
+<script>
+    document.getElementById('lightmode').addEventListener('click', () => {
+        document.getElementById('themeStylesheet').setAttribute('href', 'estilos.css');
+    });
+
+    document.getElementById('darkmode').addEventListener('click', () => {
+        document.getElementById('themeStylesheet').setAttribute('href', 'estilos-dark.css');
+    });
+</script>
 
 </html>
